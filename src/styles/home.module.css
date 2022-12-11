@@ -1,0 +1,31 @@
+@font-face {
+    font-family: Poppins-Light;
+    src: url(../fonts/Poppins/Poppins-Light.ttf);
+}
+
+.home {
+    background-image: url(../images/unrecognizable-employee-working-with-laptop1.png);
+    background-size: cover;
+    background-position-y: -100px;
+}
+
+.landding {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.landding header {
+    display: flex;
+    height: 80vh;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.landding h1 {
+    font-family: Poppins-Light;
+    font-size: 3rem;
+}
+
+.landding p {
+    font-size: 1.1rem;
+}
