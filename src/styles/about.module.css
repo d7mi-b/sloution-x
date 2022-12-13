@@ -1,0 +1,64 @@
+@font-face {
+    font-family: PoppinsLight;
+    src: url(../fonts/Poppins/Poppins-Light.ttf);
+}
+
+.about {
+    background-color: var(--background);
+}
+
+.about .container {
+    display: flex;
+}
+
+.about .img {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about .img img {
+    width: 100%;
+}
+
+.about .content {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-family: PoppinsLight;
+    padding: 0 1.5rem;
+    text-align: center;
+}
+
+.about .content header h1 {
+    font-size: 2rem;
+}
+
+.about .content p {
+    color: var(--secondary);
+    font-size: 1.7rem;
+    width: 85%;
+    margin: 0 0 0 auto;
+    text-align: justify;
+    text-justify: distribute ;
+}
+
+.about .content button {
+    width: 300px;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    color: var(--main);
+    padding: 10px 0;
+    border-radius: 25px;
+    border: 1px solid var(--border);
+}
+
+.about .content button:hover {
+    color: var(--hover);
+    transform: scale(1.01);
+    transition: .2s;
+}
