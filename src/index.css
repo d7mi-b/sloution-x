@@ -20,6 +20,11 @@
     src: url(./fonts/Poppins/Poppins-Regular.ttf);
 }
 
+@font-face {
+    font-family: PoppinsLight;
+    src: url(./fonts/Poppins/Poppins-Light.ttf);
+}
+
 body {
     font-family: Poppins;
     color: var(--main);
@@ -31,5 +36,5 @@ body {
 }
 
 .section {
-    height: 100vh;
+    min-height: 100vh;
 }

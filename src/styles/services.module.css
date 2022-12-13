@@ -1,0 +1,51 @@
+.services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.services .container {
+    text-align: center;
+    font-family: PoppinsLight;
+}
+
+.services .container header h1 {
+    font-size: 2rem;
+    margin: 3rem auto;
+}
+
+.serviceContiner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px;
+}
+
+.service {
+    text-align: center;
+}
+
+.service .img {
+    background-color: var(--background);
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+    margin: 1.2rem auto;
+    text-align: center;
+}
+
+.service .img img {
+    width: 70%;
+    position: relative;
+    top: 35%;
+    left: 18%;
+    transform: translate(-25%, -25%);
+}
+
+.service header h3 {
+    text-transform: uppercase;
+    margin: 1.5rem auto;
+}
+
+.service p {
+    text-align: center;
+}
