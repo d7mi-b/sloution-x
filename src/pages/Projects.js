@@ -79,7 +79,7 @@ const Projects = () => {
                     {
                         facts.map(e => {
                             return (
-                                <article className={style.fact}>
+                                <article className={style.fact} key={e.id}>
                                     <section className={style.img}>
                                         <img src={e.img} alt={e.title} />
                                     </section>

@@ -1,4 +1,5 @@
 import About from './pages/About';
+import Customers from './pages/Customers';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
 import Services from './pages/Services';
@@ -10,6 +11,7 @@ function App() {
       <About />
       <Services />
       <Projects />
+      <Customers />
     </div>
   );
 }

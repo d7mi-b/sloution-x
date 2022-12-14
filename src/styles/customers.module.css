@@ -1,0 +1,70 @@
+.customers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.customers .container {
+    display: flex;
+}
+
+.customers .container .btn {
+    margin: 0 25px;
+    border: none;
+    background: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.customers .container .btn img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: var(--background);
+    padding: 15px;
+    display: block;
+}
+
+.customers .container .btn img:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+.customersContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px;
+}
+
+.customersContainer .customer {
+    background-color: var(--background);
+    padding: 80px 30px 30px;
+    position: relative;
+    box-shadow: 1px 1px 5px 1px var(--border);
+}
+
+.customersContainer .customer .quote {
+    width: 150px;
+    display: block;
+    position: absolute;
+    top: -60px;
+    right: 0;
+}
+
+.customersContainer .customer .info {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto 0;
+}
+
+.customersContainer .customer .info img {
+    width: 100px;
+}
+
+.customersContainer .customer .info p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
