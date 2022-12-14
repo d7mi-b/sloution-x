@@ -50,7 +50,7 @@ const facts = [
 
 const Projects = () => {
     return (
-        <section className={`section ${style.projects}`}>
+        <section className={`section ${style.projects}`} id='#projects'>
             <div className={`container ${style.container}`}>
                 <header>
                     <h1>PROJECTS</h1>
