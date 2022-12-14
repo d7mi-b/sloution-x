@@ -35,7 +35,7 @@ const Services = () => {
                     {
                         services.map(e => {
                             return (
-                                <article className={style.service}>
+                                <article className={style.service} key={e.id}>
                                     <section className={style.img}>
                                         <img src={e.img} alt='' />
                                     </section>

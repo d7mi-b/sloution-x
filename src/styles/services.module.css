@@ -48,4 +48,5 @@
 
 .service p {
     text-align: center;
+    color: var(--secondary);
 }
