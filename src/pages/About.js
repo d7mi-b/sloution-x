@@ -3,7 +3,7 @@ import style from '../styles/about.module.css';
 
 const About = () => {
     return (
-        <section className={`section ${style.about}`} id="#about">
+        <section className={`${style.about}`}>
             <div className={`container ${style.container}`}>
                 <div className={`${style.img}`}>
                     <img src={aboutImg} alt='About' />

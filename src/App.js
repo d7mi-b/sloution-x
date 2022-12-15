@@ -8,12 +8,12 @@ import Services from './pages/Services';
 function App() {
   return (
     <div className="App">
-      <Home />
-      <About />
-      <Services />
-      <Projects />
+      <Home id='home' />
+      <About id='about' />
+      <Services id='service' />
+      <Projects id='projects' />
       <Customers />
-      <Footer />
+      <Footer id='contact' />
     </div>
   );
 }

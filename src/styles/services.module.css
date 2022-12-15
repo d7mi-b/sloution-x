@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    min-height: 100vh;
 }
 
 .services .container {
@@ -49,4 +50,32 @@
 .service p {
     text-align: center;
     color: var(--secondary);
+}
+
+@media (min-width: 282px) and (max-width: 767px) {
+    .serviceContiner .service p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .serviceContiner .service p {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 282px) and (max-width: 1024px) {
+    .services .container header h1 {
+        margin: 3rem auto 0;
+    }
+
+    .serviceContiner {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 3rem 0;
+    }
+
+    .serviceContiner .service {
+        width: 80%;
+        margin: 0 auto;
+    }
 }

@@ -15,7 +15,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
 }
 
 .customers .container .btn img {
@@ -67,4 +66,33 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+@media (min-width: 282px) and (max-width: 1024px) {
+    .customers {
+        margin: 3rem auto;
+    }
+
+    .customers .container {
+        flex-direction: column;
+    }
+
+    .customers .container .btn img {
+        margin: 2rem auto;
+        transform: rotate(90deg);
+    }
+
+    .customersContainer {
+        width: 80%;
+        margin: 0 auto;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .customersContainer .customer {
+        margin: 1.5rem auto;
+    }
+
+    .customersContainer .customer .info {
+        justify-content: flex-start;
+    }
 }

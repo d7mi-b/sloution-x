@@ -1,5 +1,6 @@
 .about {
     background-color: var(--background);
+    min-height: 100vh;
 }
 
 .about .container {
@@ -39,7 +40,7 @@
     width: 85%;
     margin: 0 0 0 auto;
     text-align: justify;
-    text-justify: distribute ;
+    text-justify: distribute;
 }
 
 .about .content button {
@@ -50,10 +51,46 @@
     padding: 10px 0;
     border-radius: 25px;
     border: 1px solid var(--border);
+    background-color: transparent;
 }
 
 .about .content button:hover {
     color: var(--hover);
     transform: scale(1.01);
-    transition: .2s;
+    transition: 0.2s;
+}
+
+@media (min-width: 282px) and (max-width: 1024px) {
+    .about {
+        min-height: fit-content;
+        padding: 3rem 0;
+    }
+
+    .about .container {
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .about .img {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .about .content {
+        width: 100%;
+        height: fit-content;
+        padding: 3rem 0;
+    }
+
+    .about .content p {
+        text-align: center;
+        width: 100%;
+        margin: 2rem auto;
+    }
+}
+
+@media (min-width: 282px) and (max-width: 767px) {
+    .about .content p {
+        font-size: 1.5rem;
+    }
 }

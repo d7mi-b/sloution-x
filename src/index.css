@@ -38,3 +38,9 @@ body {
 .section {
     min-height: 100vh;
 }
+
+@media (min-width: 282px) and (max-width: 992px) {
+    .container {
+        width: 95%;
+    }
+}

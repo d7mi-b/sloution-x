@@ -91,3 +91,47 @@
 .footer .copyright span {
     font-size: 1.6rem;
 }
+
+@media (min-width: 282px) and (max-width: 1024px) {
+    .footer .container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .iconsContainer img {
+        width: 70%;
+    }
+
+    .iconsContainer .icons {
+        justify-content: center;
+    }
+
+    .iconsContainer .icons a {
+        width: 40px;
+        margin: 20px;
+    }
+
+    .content {
+        justify-content: center;
+        text-align: center;
+        height: fit-content;
+        font-size: 1.5rem;
+    }
+
+    .content p {
+        margin: 15px auto;
+    }
+
+    .subscribe form {
+        justify-content: center;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .subscribe .email {
+        width: 300px;
+    }
+
+    .subscribe .email input {
+        width: calc(100% - 25px);
+    }
+}
