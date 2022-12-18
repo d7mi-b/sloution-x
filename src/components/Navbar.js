@@ -1,6 +1,9 @@
 import logo from '../images/logo.png';
 import search from '../images/magnifying-glass.png'
 import style from '../styles/navbar.module.css'
+import Scroll from 'react-scroll';
+
+const ScrollLink = Scroll.Link;
 
 const Navbar = () => {
     return (
@@ -13,11 +16,56 @@ const Navbar = () => {
                     <img src='/menu.png' alt='mune' />
                 </div>
                 <ul className={style.list}>
-                    <li className={style.active}><a href='#home'>HOME</a></li>
-                    <li><a href='#about'>ABOUT</a></li>
-                    <li><a href='#projects'>PROJECTS</a></li>
-                    <li><a href='#service'>SERVICE</a></li>
-                    <li><a href='#contact'>CONTACT</a></li>
+                    <li className={style.active}>
+                        <ScrollLink 
+                            to="home" 
+                            spy={true} 
+                            smooth={true} 
+                            duration={500} 
+                        >
+                            HOME
+                        </ScrollLink>
+                    </li>
+                    <li>
+                        <ScrollLink 
+                            to="about" 
+                            spy={true} 
+                            smooth={true} 
+                            duration={600} 
+                        >
+                            ABOUT
+                        </ScrollLink>
+                    </li>
+                    <li>
+                        <ScrollLink 
+                            to="projects" 
+                            spy={true} 
+                            smooth={true} 
+                            duration={800} 
+                        >
+                            PROJECTS
+                        </ScrollLink>
+                    </li>
+                    <li>
+                        <ScrollLink 
+                            to="service" 
+                            spy={true} 
+                            smooth={true} 
+                            duration={700} 
+                        >
+                            SERVICE
+                        </ScrollLink>
+                    </li>
+                    <li>
+                        <ScrollLink 
+                            to="contact" 
+                            spy={true} 
+                            smooth={true} 
+                            duration={900} 
+                        >
+                            CONTACT
+                        </ScrollLink>
+                    </li>
                     <li className={style.searchSec}>
                         <input type='search' name='search' id='search-input' />
                         <div>

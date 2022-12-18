@@ -39,8 +39,7 @@
     font-size: 1.7rem;
     width: 85%;
     margin: 0 0 0 auto;
-    text-align: justify;
-    text-justify: distribute;
+    text-align: left;
 }
 
 .about .content button {
@@ -52,12 +51,29 @@
     border-radius: 25px;
     border: 1px solid var(--border);
     background-color: transparent;
+    cursor: pointer;
 }
 
 .about .content button:hover {
     color: var(--hover);
     transform: scale(1.01);
     transition: 0.2s;
+    border-color: var(--hover);
+    animation-name: btnAnimation;
+    animation-duration: 2s;
+    animation-fill-mode: backwards;
+}
+
+@keyframes btnAnimation {
+    from {
+        border: 1px solid var(--border);
+        color: var(--main);
+    }
+
+    to {
+        border: 1px solid var(--hover);
+        color: var(--hover);
+    }
 }
 
 @media (min-width: 282px) and (max-width: 1024px) {

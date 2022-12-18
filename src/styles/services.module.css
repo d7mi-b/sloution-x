@@ -19,10 +19,27 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 25px;
+    overflow: hidden;
 }
 
 .service {
     text-align: center;
+}
+
+.serviceAnimation {
+    position: relative;
+    animation-name: serviceAnimation;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes serviceAnimation {
+    0% {
+        transform: translate(0, 300px);
+    }
+    50% {
+        transform: translate(0, 0);
+    }
 }
 
 .service .img {

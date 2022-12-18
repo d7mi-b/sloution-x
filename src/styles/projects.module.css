@@ -83,11 +83,37 @@
 .facts .fact {
     display: flex;
     justify-content: center;
+    position: relative;
 }
 
 .facts .fact:first-child,
 .facts .fact:nth-child(2) {
     border-right: 3px solid var(--background);
+}
+
+.facts .fact:first-child:after,
+.facts .fact:nth-child(2)::after {
+    content: '';
+    width: 2px;
+    background-color: var(--main);
+    transition: 1s;
+    height: 0;
+    position: absolute;
+}
+
+.facts .fact:first-child:after {
+    bottom: 0;
+    right: 0;
+}
+
+.facts .fact:nth-child(2)::after {
+    top: 0;
+    right: 0;
+}
+
+.facts:hover .fact:first-child::after,
+.facts:hover .fact:nth-child(2)::after {
+    height: 100%;
 }
 
 .facts .fact .img {
@@ -154,6 +180,11 @@
         text-align: center;
         margin: 1.5rem auto;
         font-size: 1.5rem;
+    }
+
+    .facts .fact:first-child:after,
+    .facts .fact:nth-child(2)::after {
+        content: none;
     }
 }
 

@@ -15,6 +15,18 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    cursor: pointer;
+}
+
+@keyframes btnAnimation {
+    from {
+        background-color: var(--background);
+    }
+
+    to {
+        background-color: var(--white);
+        border: 1px solid var(--main);
+    }
 }
 
 .customers .container .btn img {
@@ -27,8 +39,13 @@
 }
 
 .customers .container .btn img:hover {
-    transform: scale(1.05);
-    transition: 0.3s;
+    transform: scale(1.07);
+    transition: 0.8s;
+    animation-name: btnAnimation;
+    animation-duration: 2s;
+    animation-fill-mode: backwards;
+    background-color: var(--white);
+    border: 1px solid var(--main);
 }
 
 .customersContainer {
@@ -42,6 +59,24 @@
     padding: 80px 30px 30px;
     position: relative;
     box-shadow: 1px 1px 5px 1px var(--border);
+}
+
+.customersContainer .customer:hover {
+    animation-name: example;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    transform: scale(1.02);
+    background-color: var(--white);
+}
+
+@keyframes example {
+    0% {
+        background-color: var(--background);
+    }
+    50% {
+        background-color: var(--white);
+        transform: scale(1.02);
+    }
 }
 
 .customersContainer .customer .quote {
@@ -66,6 +101,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: 0 0 0 15px;
 }
 
 @media (min-width: 282px) and (max-width: 1024px) {

@@ -26,6 +26,10 @@
     width: 30px;
 }
 
+.iconsContainer .icons a:hover {
+    transform: scale(1.05);
+}
+
 .iconsContainer .icons a img {
     width: 100%;
 }
