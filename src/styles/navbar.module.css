@@ -33,11 +33,24 @@
 .navbar .list a {
     color: var(--hover);
     text-decoration: none;
+    position: relative;
 }
 
 .navbar .list a:hover {
     color: var(--main);
     text-decoration: none;
+    transition: 0.3s;
+}
+
+.navbar .list a:hover::after {
+    position: absolute;
+    content: '';
+    width: 40%;
+    height: 2px;
+    bottom: 0;
+    right: 0;
+    background-color: var(--hover);
+    transition: 0.3s;
 }
 
 .navbar .list .searchSec {
@@ -71,11 +84,16 @@
 
 .navbar .list .active a {
     color: var(--main);
-    border-bottom: 2px solid var(--hover);
-    /* text-decoration: underline;
-    text-decoration-color: var(--hover);
-    text-decoration-thickness: 4px;
-    text-underline-offset: 5px; */
+}
+
+.navbar .list .active a::after {
+    position: absolute;
+    content: '';
+    width: 40%;
+    height: 2px;
+    bottom: 0;
+    right: 0;
+    background-color: var(--hover);
 }
 
 @media (min-width: 282px) and (max-width: 992px) {
@@ -106,6 +124,14 @@
 
     .navbar .navList:hover .list {
         display: block;
+    }
+
+    .navbar .list a:hover::after {
+        content: none;
+    }
+
+    .navbar .list .active a::after {
+        content: none;
     }
 }
 

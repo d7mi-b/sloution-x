@@ -51,6 +51,18 @@
     text-align: center;
 }
 
+.service:hover .img {
+    background-color: transparent;
+    outline: 1px solid var(--main);
+    outline-offset: 10px;
+    transition: 0.5s;
+}
+
+.service:hover .img img {
+    transform: scale(1.1) translate(-25%, -25%);
+    transition: 0.5s;
+}
+
 .service .img img {
     width: 70%;
     position: relative;

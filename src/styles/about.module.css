@@ -57,23 +57,9 @@
 .about .content button:hover {
     color: var(--hover);
     transform: scale(1.01);
-    transition: 0.2s;
-    border-color: var(--hover);
-    animation-name: btnAnimation;
-    animation-duration: 2s;
-    animation-fill-mode: backwards;
-}
-
-@keyframes btnAnimation {
-    from {
-        border: 1px solid var(--border);
-        color: var(--main);
-    }
-
-    to {
-        border: 1px solid var(--hover);
-        color: var(--hover);
-    }
+    transition: 0.5s;
+    border: 1px solid var(--hover);
+    box-shadow: 1px 1px 3px 1px var(--border);
 }
 
 @media (min-width: 282px) and (max-width: 1024px) {
