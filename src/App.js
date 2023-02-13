@@ -1,5 +1,4 @@
 import About from './pages/About';
-import Customers from './pages/Customers';
 import Footer from './pages/Footer';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
@@ -24,8 +23,6 @@ function App() {
       <Element id='projects' name='projects'>
         <Projects />
       </Element>
-
-      <Customers />
 
       <Element id='contact' name='contact'>
         <Footer />

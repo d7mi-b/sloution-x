@@ -1,6 +1,5 @@
-import logo from '../images/logo.png';
-import search from '../images/magnifying-glass.png'
-import style from '../styles/navbar.module.css'
+import style from '../styles/navbar.module.css';
+import { Button } from '@mui/material'
 import Scroll from 'react-scroll';
 
 const ScrollLink = Scroll.Link;
@@ -9,8 +8,9 @@ const Navbar = () => {
     return (
         <nav className={style.navbar}>
             <section className={style.logo}>
-                <img src={logo} alt="sloution x" />
+                <img src='/images/logo.svg' alt="sloution x" />
             </section>
+
             <section className={style.navList}>
                 <div className={style.bar}>
                     <img src='/menu.png' alt='mune' />
@@ -23,7 +23,7 @@ const Navbar = () => {
                             smooth={true} 
                             duration={500} 
                         >
-                            HOME
+                            الرئيسية
                         </ScrollLink>
                     </li>
                     <li>
@@ -33,17 +33,7 @@ const Navbar = () => {
                             smooth={true} 
                             duration={600} 
                         >
-                            ABOUT
-                        </ScrollLink>
-                    </li>
-                    <li>
-                        <ScrollLink 
-                            to="projects" 
-                            spy={true} 
-                            smooth={true} 
-                            duration={800} 
-                        >
-                            PROJECTS
+                            نبذه عننا
                         </ScrollLink>
                     </li>
                     <li>
@@ -53,7 +43,17 @@ const Navbar = () => {
                             smooth={true} 
                             duration={700} 
                         >
-                            SERVICE
+                            خدماتنا
+                        </ScrollLink>
+                    </li>
+                    <li>
+                        <ScrollLink 
+                            to="projects" 
+                            spy={true} 
+                            smooth={true} 
+                            duration={800} 
+                        >
+                            أعمالنا
                         </ScrollLink>
                     </li>
                     <li>
@@ -63,16 +63,14 @@ const Navbar = () => {
                             smooth={true} 
                             duration={900} 
                         >
-                            CONTACT
+                            نواصل معنا
                         </ScrollLink>
                     </li>
-                    <li className={style.searchSec}>
-                        <input type='search' name='search' id='search-input' />
-                        <div>
-                            <img src={search} alt='search' />
-                        </div>
-                    </li>
                 </ul>
+            </section>
+
+            <section className={style.buttons}>
+                <Button variant='contained' className={style.btn}>طلب عرض سعر</Button>
             </section>
         </nav>
     );

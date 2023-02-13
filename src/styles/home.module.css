@@ -1,11 +1,12 @@
 @font-face {
-    font-family: Poppins-Light;
-    src: url(../fonts/Poppins/Poppins-Light.ttf);
+    font-family: Tajawal;
+    src: url(../fonts/Tajawal/Tajawal-Regular.ttf);
 }
 
 .home {
-    background-image: url(../images/unrecognizable-employee-working-with-laptop1.png);
+    background-image: url(/public/images/background\ 1.png);
     background-size: cover;
+    min-height: 110vh;
     /* background-position-y: -100px; */
 }
 
@@ -15,61 +16,113 @@
     grid-gap: 25px;
 }
 
-.landding header {
+.landding .img {
+    height: 70vh;
     display: flex;
-    height: 84vh;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.landding .img img {
+    width: 100%;
+}
+
+.landding .header {
+    display: flex;
+    height: 60vh;
     flex-direction: column;
     justify-content: center;
+    text-align: right;
 }
 
 .landding h1 {
-    font-family: Poppins-Light;
-    font-size: 3rem;
+    font-weight: 700;
+    width: 95%;
 }
 
 .landding p {
     font-size: 1.1rem;
+    font-weight: 600;
 }
 
 @media (min-width: 282px) and (max-width: 767px) {
     .home {
-        background-color: #f2f0f1;
-        background-size: 150%;
         background-repeat: no-repeat;
-        background-position: 100% bottom;
+        background-position-x: center;
+        background-position-y: center;
     }
 
     .landding {
-        grid-template-columns: repeat(1, 1fr);
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        height: 80vh;
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
     }
 
-    .landding header {
+    .landding .img {
+        height: fit-content;
+        width: 90%;
+        margin: 15px auto;
+    }
+
+    .landding .img img {
+        width: 100%;
+    }
+
+    .landding .header {
         text-align: center;
+        height: fit-content;
+        margin: 30px auto;
     }
 
     .landding header h1 {
         font-size: 2.1rem;
+        width: 100%;
     }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
     .home {
-        background-color: #f2f0f1;
-        background-size: 150%;
         background-repeat: no-repeat;
-        background-position: 100% bottom;
+        background-position-x: center;
+        background-position-y: center;
     }
 
     .landding {
-        grid-template-columns: repeat(1, 1fr);
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        height: 80vh;
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
     }
 
-    .landding header {
+    .landding .img {
+        height: fit-content;
+        width: 90%;
+        margin: 15px auto;
+    }
+
+    .landding .img img {
+        width: 100%;
+    }
+
+    .landding .header {
         text-align: center;
-        height: 70vh;
+        height: fit-content;
+        margin: 30px auto;
     }
 
     .landding header h1 {
-        font-size: 3.8rem;
+        font-size: 4rem;
+        width: 100%;
+    }
+
+    .landding header p {
+        font-size: 1.4rem;
     }
 }

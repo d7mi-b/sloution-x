@@ -1,3 +1,4 @@
+import { Typography } from "@mui/material";
 import Navbar from "../components/Navbar";
 import style from '../styles/home.module.css';
 
@@ -7,13 +8,18 @@ const Home = () => {
             <section className="container">
                 <Navbar />
                 <article className={style.landding}>
-                    <header>
-                        <h1>
-                            WE MAKE PROBLEM OUT OF NOTHING
-                        </h1>
-                        <p>
-                            we provide technical solutions for all problems
-                        </p>
+                    <section className={style.img} >
+                        <img src="/images/devices.png" alt="devices" />
+                    </section>
+                    <header className={style.header} >
+                        <Typography variant="h1" gutterBottom>
+                            نجعل من المشكلة لا شي !
+                        </Typography>
+                        <Typography variant="body1" gutterBottom>
+                            حــلـــــول بـرمـجـــيـــة وخـــدمات تصــميـــم و تـــطوير الـمواقـع 
+                            الإلكترونية وتطـبيقـات الجوال بمظهر عصـري و إستخدام ادوات التــكنولوجيا 
+                            المتطورة في مجال المواقع. 
+                        </Typography>
                     </header>
                 </article>
             </section>

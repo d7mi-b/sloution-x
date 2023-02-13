@@ -7,26 +7,30 @@
 }
 
 :root {
-    --main: #1a2d68;
-    --secondary: #5b6ea8;
-    --hover: #0375be;
-    --border: #707070;
-    --background: #ebe9ea;
+    --main: #323232;
+    --secondary: #0142da;
+    --hover: #6366ff;
+    --border: #eecc00;
+    --background: #dadadb;
     --white: #ffffff;
 }
 
 @font-face {
-    font-family: Poppins;
-    src: url(./fonts/Poppins/Poppins-Regular.ttf);
+    font-family: Tajawal;
+    src: url(./fonts/Tajawal/Tajawal-Regular.ttf);
 }
 
 @font-face {
-    font-family: PoppinsLight;
-    src: url(./fonts/Poppins/Poppins-Light.ttf);
+    font-family: Harir;
+    src: url(./fonts/alfont_com_harir.otf);
+}
+
+html {
+    direction: rtl;
 }
 
 body {
-    font-family: Poppins;
+    font-family: Harir;
     color: var(--main);
 }
 
