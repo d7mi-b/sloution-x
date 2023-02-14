@@ -3,27 +3,56 @@
     flex-direction: column;
     justify-content: center;
     min-height: 100vh;
+    background-image: url(/public//images//background\ 2.png);
+    background-size: cover;
+    background-position-y: 80vh;
 }
 
 .services .container {
     text-align: center;
-    font-family: PoppinsLight;
 }
 
 .services .container header h1 {
-    font-size: 2rem;
     margin: 3rem auto;
+    font-weight: 600;
+}
+
+.services .container header h1 span {
+    position: relative;
+}
+
+.services .container header h1 span:first-child:after {
+    content: "";
+    width: 150px;
+    height: 25px;
+    background-color: var(--border);
+    position: absolute;
+    bottom: 10px;
+    z-index: 0;
+}
+
+.services .container header p {
+    color: var(--third);
+    font-weight: 600;
+    width: 70%;
+    margin: 0 auto;
 }
 
 .serviceContiner {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 25px;
-    overflow: hidden;
+    grid-gap: 35px;
+    margin: 45px auto;
 }
 
 .service {
     text-align: center;
+    padding: 20px;
+}
+
+.service:nth-child(2) {
+    transform: scale(1.1);
+    z-index: 2;
 }
 
 .serviceAnimation {
@@ -42,48 +71,86 @@
     }
 }
 
-.service .img {
-    background-color: var(--background);
-    border-radius: 50%;
-    width: 130px;
-    height: 130px;
-    margin: 1.2rem auto;
-    text-align: center;
-}
-
-.service:hover .img {
-    background-color: transparent;
-    outline: 1px solid var(--main);
-    outline-offset: 10px;
-    transition: 0.5s;
-}
-
-.service:hover .img img {
-    transform: scale(1.1) translate(-25%, -25%);
-    transition: 0.5s;
-}
-
-.service .img img {
-    width: 70%;
-    position: relative;
-    top: 35%;
-    left: 18%;
-    transform: translate(-25%, -25%);
-}
-
-.service header h3 {
-    text-transform: uppercase;
-    margin: 1.5rem auto;
+.service h1 {
+    font-weight: 600;
 }
 
 .service p {
+    font-weight: 600;
+}
+
+.service p sub {
+    color: var(--third);
+    font-size: 1rem;
+}
+
+.service .img {
+    background-color: var(--border);
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin: 15px auto 20px;
     text-align: center;
+    padding: 0;
+}
+
+.service .img img {
+    width: 100%;
+}
+
+.service .featurs {
+    text-align: right;
+    position: relative;
+    margin: 10px 0;
+}
+
+.service .featurs img {
+    display: inline-block;
+    margin: 0 7px;
+    position: relative;
+    top: 10px;
+}
+
+.service button {
+    width: 130px;
+    margin: 15px 0 0;
+    font-family: Harir;
+    font-weight: 600;
+    border-color: var(--secondary);
     color: var(--secondary);
 }
 
+.service:nth-child(2) button {
+    border-color: var(--white);
+    color: var(--white);
+    background-color: var(--secondary);
+}
+
+.service button a {
+    display: block;
+    width: 100%;
+}
+
 @media (min-width: 282px) and (max-width: 767px) {
+    .services .container header h1 {
+        font-size: 2.7rem;
+    }
+
+    .serviceContiner {
+        padding: 0;
+    }
+
+    .serviceContiner .service {
+        padding: 20px 0;
+        width: 100%;
+    }
+
+    .service .featurs img {
+        margin: 0 3px;
+    }
+
     .serviceContiner .service p {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
 }
 
@@ -94,6 +161,16 @@
 }
 
 @media (min-width: 282px) and (max-width: 1024px) {
+    .services .container header p {
+        margin-top: 35px;
+        line-height: 1.5;
+    }
+
+    .service:nth-child(2) {
+        transform: none;
+        z-index: 2;
+    }
+
     .services .container header h1 {
         margin: 3rem auto 0;
     }
