@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import Projects from './pages/Projects';
 import Services from './pages/Services';
 import { Element } from 'react-scroll'
+import Contact from './pages/Contact';
 
 function App() {
   return (
@@ -25,8 +26,10 @@ function App() {
       </Element>
 
       <Element id='contact' name='contact'>
-        <Footer />
+        <Contact />
       </Element>
+
+      <Footer />
     </div>
   );
 }

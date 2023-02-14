@@ -45,9 +45,10 @@
     margin: 45px auto;
 }
 
-.service {
+.serviceContiner .service {
     text-align: center;
     padding: 20px;
+    box-shadow: 1px 1px 3px 3px var(--background);
 }
 
 .service:nth-child(2) {

@@ -1,0 +1,35 @@
+.contact {
+    background-image: url(/public//images//background\ 4.png);
+    background-size: cover;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.container header {
+    width: 43%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.container header h1 {
+    font-weight: 600;
+}
+
+.container header h1 span {
+    position: relative;
+}
+
+.container header h1 span:first-child:after,
+.container header h1 span:nth-child(3):after {
+    content: "";
+    width: 150px;
+    height: 25px;
+    background-color: var(--border);
+    position: absolute;
+    bottom: 10px;
+    z-index: 0;
+}
