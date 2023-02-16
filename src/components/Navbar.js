@@ -9,7 +9,7 @@ const Navbar = () => {
     return (
         <nav className={style.navbar}>
             <section className={style.logo}>
-                <img src='/images/logo.svg' alt="sloution x" />
+                <img src='/images/x solution.png' alt="sloution x" />
             </section>
 
             <section className={style.navList}>
