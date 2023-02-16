@@ -6,6 +6,7 @@
     background-image: url(/public//images//background\ 2.png);
     background-size: cover;
     background-position-y: 80vh;
+    overflow: hidden;
 }
 
 .services .container {
@@ -121,10 +122,23 @@
     color: var(--secondary);
 }
 
+.service button:hover {
+    background-color: var(--secondary);
+    color: var(--white);
+    transition: .3s;
+}
+
 .service:nth-child(2) button {
     border-color: var(--white);
     color: var(--white);
     background-color: var(--secondary);
+}
+
+.service:nth-child(2) button:hover {
+    background-color: var(--white);
+    color: var(--secondary);
+    border: 1px solid var(--secondary);
+    transition: .3s;
 }
 
 .service button a {

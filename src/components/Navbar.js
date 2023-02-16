@@ -1,6 +1,7 @@
 import style from '../styles/navbar.module.css';
 import { Button } from '@mui/material'
 import Scroll from 'react-scroll';
+import Link from 'react-scroll/modules/components/Link';
 
 const ScrollLink = Scroll.Link;
 
@@ -63,14 +64,16 @@ const Navbar = () => {
                             smooth={true} 
                             duration={900} 
                         >
-                            نواصل معنا
+                            تواصل معنا
                         </ScrollLink>
                     </li>
                 </ul>
             </section>
 
             <section className={style.buttons}>
-                <Button variant='contained' className={style.btn}>طلب عرض سعر</Button>
+                <Button variant='contained' className={style.btn}>
+                    <Link to='contact'>طلب عرض سعر</Link>
+                </Button>
             </section>
         </nav>
     );

@@ -1,141 +1,41 @@
 .footer {
-    background-color: var(--main);
-    padding: 35px 0;
+    background-color: var(--secondary);
+    padding: 35px 0 10px;
     color: var(--white);
-    font-family: PoppinsLight;
 }
 
-.footer .container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 45px;
-}
-
-.iconsContainer img {
-    width: 80%;
+.footer .logo {
+    text-align: center;
+    width: 150px;
     margin: 0 auto;
-    display: block;
 }
 
-.iconsContainer .icons {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.iconsContainer .icons a {
-    width: 30px;
-}
-
-.iconsContainer .icons a:hover {
-    transform: scale(1.05);
-}
-
-.iconsContainer .icons a img {
+.footer .logo img {
     width: 100%;
 }
 
-.content {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 30vh;
-}
-
-.subscribe form {
-    display: flex;
-}
-
-.subscribe .email {
-    padding: 5px 7px 0px;
-    background-color: var(--white);
-    border-radius: 10px;
-    border: 1px solid var(--border);
-    margin: 0 5px 0 0;
-}
-
-.subscribe .email img {
-    width: 25px;
-}
-
-.subscribe .email input {
-    position: relative;
-    top: -7px;
-    border: none;
-    padding: 3px;
-    color: var(--main);
-}
-
-.subscribe .email input:focus-visible {
-    outline: none;
-}
-
-.subscribe form button {
-    width: 60px;
-    color: var(--white);
-    background-color: transparent;
-    border: 2px solid var(--white);
-    font-size: 1.2rem;
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-.subscribe form button:hover {
-    color: var(--hover);
-    border-color: var(--hover);
-}
-
-.footer .copyright {
-    grid-column: 1 / -1;
-    border-top: 3px solid var(--white);
+.iconsContainer {
+    width: 80%;
+    margin: 0 auto;
     text-align: center;
-    margin: 35px 0 0;
-    padding: 20px 0 0;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--white);
 }
 
-.footer .copyright span {
-    font-size: 1.6rem;
+.iconsContainer svg {
+    color: var(--white);
 }
 
-@media (min-width: 282px) and (max-width: 1024px) {
-    .footer .container {
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    .iconsContainer img {
-        width: 70%;
-    }
-
-    .iconsContainer .icons {
-        justify-content: center;
-    }
-
-    .iconsContainer .icons a {
-        width: 40px;
-        margin: 20px;
-    }
-
-    .content {
-        justify-content: center;
-        text-align: center;
-        height: fit-content;
-        font-size: 1.5rem;
-    }
-
-    .content p {
-        margin: 15px auto;
-    }
-
-    .subscribe form {
-        justify-content: center;
-    }
+.iconsContainer svg:hover {
+    color: var(--hover);
+    transition: .2s;
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
-    .subscribe .email {
-        width: 300px;
-    }
+.copyright {
+    text-align: center;
+    margin: 15px auto 0;
+}
 
-    .subscribe .email input {
-        width: calc(100% - 25px);
-    }
+.copyright span {
+    font-size: 2rem;
 }
